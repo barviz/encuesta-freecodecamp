@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lan="en">
+
+  <head>
+    <meta charset="uft-8">
+    <title>Formulario Encuesta</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+
+      <h1 id="title">Formulario</h1>
+      <p id="description">Formulario de encuesta personal</p>
+
+      <form id="survey-form">
+
+        <fieldset>
+          <label for="name" id="name-label">Ingrese su nombre: <input id="name" type="text" placeholder="nombre" value="name" required /></label>
+          <label for="email" id="email-label">Ingrese su email: <input id="email" type="email" placeholder="email" value="email" required /></label>
+          <label for="number" id="number-label">Ingrese su edad: <input id="number" type="number" min="16" max="100" placeholder="edad" value="edad" required /></label>
+        </fieldset>
+
+        <fieldset>
+          <label for="eleccion">Qué estado civil tiene?
+            <select id="dropdown" name="eleccion">
+              <option value="">(elije una opción)</option>
+              <option value="1">soltero</option>
+              <option value="2">casado</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <label for="dni-m"><input id="dni-m" type="radio" name="dni-sexo" value="dni-m" class="inline" /> Masculino</label>
+          <label for="dni-f"><input id="dni-f" type="radio" name="dni-sexo" value="dni-f" class="inline" /> Femenino</label>
+        </fieldset>
+
+        <fieldset>
+          <label for="color-red"><input id="color-red" value="color-red" type="checkbox" required name="color-red" class="inline" /> Rojo
+          </label>
+          <label for="color-blue"><input id="color-blue" value="color-blue" type="checkbox" required name="color-blue" class="inline" /> Azul
+          </label>
+          <label for="color-yellow"><input id="color-yellow" value="color-yellow" type="checkbox" required name="color-yellow" class="inline" /> Amarillo
+          </label><label for="color-green"><input id="color-green" value="color-green" type="checkbox" required name="color-green" class="inline" /> Verde
+          </label>
+          <label for="color-orange"><input id="color-orange" value="color-orange" type="checkbox" required name="color-orange" class="inline" /> Naranja
+          </label>
+          <label for="color-purple"><input id="color-purple" value="color-purple" type="checkbox" required name="color-purple" class="inline" /> Violeta
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <label for="comentario">Comentarios: <textarea id="comentario" name="comentario" rows="3" cols="30" placeholder="Escriba su comentario aquí..."></textarea>
+          </label>
+        </fieldset>
+
+        <input id="submit" type="submit" value="Submit" />
+
+      </form>
+
+  </body>
+
+</html>
